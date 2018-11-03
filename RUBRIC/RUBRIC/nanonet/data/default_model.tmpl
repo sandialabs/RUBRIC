@@ -1,0 +1,45 @@
+{
+    "meta": {"section": "<section>"},
+    "layers": [
+        {
+            "size": <n_features>,
+            "name": "input",
+            "type": "input"
+        },
+        {
+            "size": 128,
+            "name": "blstm_level_0",
+            "bias": 1.0,
+            "type": "blstm"
+        },
+        {
+            "size": 64,
+            "name": "subsample_level_1",
+            "bias": 1.0,
+            "type": "feedforward_tanh"
+        },
+        {
+            "size": 128,
+            "name": "blstm_level_1",
+            "bias": 1.0,
+            "type": "blstm"
+        },
+        {
+            "size": 64,
+            "name": "subsample_level_2",
+            "bias": 1.0,
+            "type": "feedforward_tanh"
+        },
+        {
+            "size": <n_states>,
+            "name": "output",
+            "bias": 1.0,
+            "type": "softmax"
+        },
+        {
+            "size": <n_states>,
+            "name": "postoutput",
+            "type": "multiclass_classification"
+        }
+    ]
+}
