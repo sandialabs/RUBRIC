@@ -19,7 +19,7 @@ Installation
 **Requirements**
 
 As the Nanonet basecaller is no longer supported or offered by Oxford Nanopore Technologies (ONT), a version modified to support RUBRIC has been included in this repository. 
-RUBRIC also relies upon the [LAST](http://last.cbrc.jp/) aligner.  Therefore LAST must also be installed and added to PATH. Nanonet will need to be compiled using [Visual C++ Compiler for Python 2.7](https://www.microsoft.com/en-us/download/details.aspx?id=44266). 
+RUBRIC also relies upon the [LAST](http://last.cbrc.jp/) aligner.  Therefore LAST must also be installed and added to PATH. Nanonet will need to be compiled using the [Visual C++ Compiler for Python 2.7](https://www.microsoft.com/en-us/download/details.aspx?id=44266).  RUBRIC relies upon the Read-Until API, which can be obtained directly from ONT.  Most of the results obtained in [DOI](https://www.biorxiv.org/content/early/2018/11/02/460014) were obtained using the RU API that was released alongside MinKNOW version 1.6.11.  *RUBRIC has not been tested on newer versions of the RU API, but may work with some small adjustments.* 
 
 **Install**
 
